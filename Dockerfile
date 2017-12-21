@@ -7,7 +7,7 @@ WORKDIR /usr/app
 
 RUN mkdir -p /usr/app/src /usr/app/build
 
-RUN npm install elm-hot-loader elm-webpack-loader
+RUN npm install elm-hot-loader elm-webpack-loader babel-core babel-loader
 
 COPY ./webpack.config.js webpack.config.js
 
